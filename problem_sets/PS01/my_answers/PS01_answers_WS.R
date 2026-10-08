@@ -38,13 +38,13 @@ meanY <- mean(y)
 stdevY <- sd(y)
 students <- length(y)
 seY <- stdevY/sqrt(students)
-TStat <- qt(0.95, 24)
-TStat * seY
+CritValue <- qt(0.95, 24)
+CritValue * seY
 meanY
-lowerbound <- meanY - TStat * seY 
-upperbound <- meanY + TStat * seY
+lowerbound <- meanY - CritValue * seY 
+upperbound <- meanY + CritValue * seY
 CI <- c(lowerbound, upperbound)
-cat("Confidence Interval is:", CI, "Mean is:", meanY, "Standard Error is:", seY, "Critical Value is:", TStat)
+cat("Confidence Interval is:", CI, "Mean is:", meanY, "Standard Error is:", seY, "Critical Value is:", CritValue)
 #Null Hypothesis Student IQ =< 100
 #Alternative Hypothesis Student IQ > 100
 tteststat <- (meanY - 100) / seY
@@ -54,7 +54,7 @@ pvalue <- pt(abs(tteststat), df = df, lower.tail=TRUE)
 pvalue
 cat("PValue is:", pvalue, "T-test statistic is:", tteststat)
 #I fail to Reject the Null Hypothesis as the p-value is much greater than .05 
-#We Fail To Reject the Null Hypothesis
+
 
 #####################
 # Problem 2

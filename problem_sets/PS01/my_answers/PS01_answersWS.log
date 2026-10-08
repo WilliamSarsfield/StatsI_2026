@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.11)  8 OCT 2026 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.11)  8 OCT 2026 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,14 +921,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
  []
 
 (./PS01_answers_WS.R) [2] (./PS01_answers_WS.R) (./PS01_answers_WS.R)
-<Scatterplot.pdf, id=54, 505.89pt x 505.89pt>
+<Scatterplot.pdf, id=52, 505.89pt x 505.89pt>
 File: Scatterplot.pdf Graphic file (type pdf)
 <use Scatterplot.pdf>
 Package pdftex.def Info: Scatterplot.pdf  used on input line 139.
 (pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
  [3]
 [4 <./Scatterplot.pdf>] (./PS01_answers_WS.R) (./PS01_answers_WS.R)
-<Boxplot.pdf, id=77, 505.89pt x 505.89pt>
+<Boxplot.pdf, id=74, 505.89pt x 505.89pt>
 File: Boxplot.pdf Graphic file (type pdf)
 <use Boxplot.pdf>
 Package pdftex.def Info: Boxplot.pdf  used on input line 156.
@@ -939,27 +939,28 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 156--158
  []
 
 [5] (./PS01_answers_WS.R [6 <./Boxplot.pdf>])
-<Shelter.pdf, id=107, 505.89pt x 505.89pt>
+<Shelter.pdf, id=104, 505.89pt x 505.89pt>
 File: Shelter.pdf Graphic file (type pdf)
 <use Shelter.pdf>
 Package pdftex.def Info: Shelter.pdf  used on input line 164.
 (pdftex.def)             Requested size: 469.75502pt x 469.76265pt.
-<ShelterRegion.pdf, id=108, 505.89pt x 505.89pt>
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 164--166
+[]
+ []
+
+[7 <./Shelter.pdf>] (./PS01_answers_WS.R)
+<ShelterRegion.pdf, id=126, 505.89pt x 505.89pt>
 File: ShelterRegion.pdf Graphic file (type pdf)
 <use ShelterRegion.pdf>
-Package pdftex.def Info: ShelterRegion.pdf  used on input line 166.
+Package pdftex.def Info: ShelterRegion.pdf  used on input line 167.
 (pdftex.def)             Requested size: 469.75502pt x 469.76265pt.
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 164--168
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 167--169
 []
  []
 
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 164--168
-[]
- []
-
-[7 <./Shelter.pdf>] [8 <./ShelterRegion.pdf>] [9] (./PS01_answersWS.aux)
+[8] [9 <./ShelterRegion.pdf>] (./PS01_answersWS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -968,10 +969,10 @@ Package rerunfilecheck Info: File `PS01_answersWS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27360 strings out of 467525
- 475660 string characters out of 5418982
- 1198091 words of memory out of 5000000
- 55711 multiletter control sequences out of 15000+600000
+ 27380 strings out of 467525
+ 475919 string characters out of 5418982
+ 1185091 words of memory out of 5000000
+ 55720 multiletter control sequences out of 15000+600000
  638814 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,104p,3246b,2152s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -986,10 +987,10 @@ l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
 /texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/
 texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/te
 xlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS01_answersWS.pdf (9 pages, 193676 bytes).
+Output written on PS01_answersWS.pdf (9 pages, 195671 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 78 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
