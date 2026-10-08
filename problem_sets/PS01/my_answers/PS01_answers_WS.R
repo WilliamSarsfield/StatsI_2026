@@ -85,7 +85,7 @@ pdf("Boxplot.pdf")
 ggplot(expenditure, aes(x=factor(Region), y=Y, colour = factor(NamedRegions))) +
   geom_boxplot() +
   scale_color_manual(values = c("red", "violet", "blue", "orange")) +
-  labs(title = "Expenditure on Housing and Shelter by Region", x = "Region", y = "Expenditure per Capita", colour = "Region") 
+  labs(title = "Per Capita Expenditure on Housing and Shelter by Region", x = "Region", y = "Expenditure per Capita", colour = "Region") 
 dev.off()
 
 
@@ -104,11 +104,11 @@ pdf("ShelterRegion.pdf")
 ggplot(expenditure, aes(x = Y, y= X1, colour = factor(NamedRegions), shape = factor(NamedRegions))) +
   geom_point(size = 3) +
   labs(
-    x = "Per Captia Expenditure on Shelters and Housing Assistance in a State", 
+    x = "Per Capita Expenditure on Shelters and Housing Assistance in a State", 
     y = "Per Capita Personal Income in State",
     colour = "NamedRegions",
     shape = "NamedRegions",
-    title = "Expenditure on Assistance x Personal Income x Region") + 
+    title = "Per Capita Expenditure on Housing & Shelters by Personal Income & Region") + 
   scale_color_manual(values = c("red", "violet", "blue", "orange"))
   theme_minimal()
 dev.off()
