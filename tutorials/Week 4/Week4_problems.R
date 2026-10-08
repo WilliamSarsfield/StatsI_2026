@@ -49,9 +49,12 @@ summary(df_not_tidy)
 
 # Research question:
 # Do different genres receive different critical appreciation?
+<<<<<<< HEAD
 library(ggplot2)
 ggplot(df, aes(x = genre, y = audience_score)) +
   geom_boxplot(alpha = .5, fill = "blue")
+=======
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
 
 # Load the tidy version of the data
 # (Prepared using the data_wrangling.R script)
@@ -148,7 +151,10 @@ prop.table(table(df_s$genre,
 
 # - manual check for 'comedy' genre: which values do we use? 
 # Your answer here 
+<<<<<<< HEAD
 63/88
+=======
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
 
 # Interpretation:
 # Estimated probability of two specific values co-occurring.
@@ -166,7 +172,10 @@ prop.table(table(df_s$genre,           # rows
 
 # - manual check for 'comedy' AND 'rotten': which values do we use? 
 # your answer here
+<<<<<<< HEAD
 63/88
+=======
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
 
 # Add marginal distributions (conditional on rows)
 addmargins(prop.table(table(df_s$genre, 
@@ -253,7 +262,11 @@ chi$residuals
 # -------------------------------#
 # c. Correlation
 # -------------------------------#
+<<<<<<< HEAD
 library(tidyverse)
+=======
+
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
 # We go back to our fictional data. 
 # Question: Is there an association between education and income?
 
@@ -265,12 +278,19 @@ plot(df$edu, df$income)
 plot(df$edu,df$income,
      col=df$cap+1) # Color over third variable (+1, because first color in R is white)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
 # Let's improve this visualization: 
 # Add a third variable (cap: 0 = non-capital, 1 = capital city)
 # Color: black (0) vs red (1)
 plot(df$edu, df$income,
+<<<<<<< HEAD
      col = df$cap + 1,
+=======
+     col = df$cap + 1,     # +1 because color 1 = black, 2 = red
+>>>>>>> 369723e10f1a7ea387918c83a7b2d4da66807a8f
      xlab="University level education (in years)",
      ylab="Monthly net income (in Euro)",
      main="The relationship between education and income")
