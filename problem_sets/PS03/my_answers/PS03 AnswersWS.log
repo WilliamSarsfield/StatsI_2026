@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.11)  12 NOV 2026 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.11)  12 NOV 2026 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,7 +821,20 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count361
 )
-(./PS03 AnswersWS.aux)
+(./PS03 AnswersWS.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `"PS03 AnswersWS.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -842,8 +855,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
-
-(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count362
 \scratchdimen=\dimen318
@@ -911,56 +923,55 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./PS03_
-Answers_WS.R)
-<Question1Plot.pdf, id=18, 505.89pt x 505.89pt>
+Answers_WS.R
+[2])
+<Question1Plot.pdf, id=40, 505.89pt x 505.89pt>
 File: Question1Plot.pdf Graphic file (type pdf)
 <use Question1Plot.pdf>
-Package pdftex.def Info: Question1Plot.pdf  used on input line 116.
+Package pdftex.def Info: Question1Plot.pdf  used on input line 131.
 (pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
-
-[2] (./PS03_Answers_WS.R) [3 <./Question1Plot.pdf>] (./PS03_Answers_WS.R)
-(./PS03_Answers_WS.R)
-<Question2Plot.pdf, id=57, 505.89pt x 505.89pt>
+ (./PS03_Answers_WS.R) [3 <./Question1Plot.pdf>] (./PS03_Answers_WS.R)
+(./PS03_Answers_WS.R [4])
+<Question2Plot.pdf, id=70, 505.89pt x 505.89pt>
 File: Question2Plot.pdf Graphic file (type pdf)
 <use Question2Plot.pdf>
-Package pdftex.def Info: Question2Plot.pdf  used on input line 153.
+Package pdftex.def Info: Question2Plot.pdf  used on input line 182.
 (pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
- [4] (./PS03_Answers_WS.R)
-Overfull \hbox (4.9991pt too wide) in paragraph at lines 159--160
-[]$[]$ \OT1/cmr/m/n/12 = .507583 + .023837 x Dif-fer-ence in Cam-paign Spend-
- []
-
-[5 <./Question2Plot.pdf>] (./PS03_Answers_WS.R) (./PS03_Answers_WS.R) [6]
-<Question3Plot.pdf, id=105, 505.89pt x 505.89pt>
+ (./PS03_Answers_WS.R) [5 <./Question2Plot.pdf>]
+(./PS03_Answers_WS.R) [6] (./PS03_Answers_WS.R)
+<Question3Plot.pdf, id=102, 505.89pt x 505.89pt>
 File: Question3Plot.pdf Graphic file (type pdf)
 <use Question3Plot.pdf>
-Package pdftex.def Info: Question3Plot.pdf  used on input line 194.
+Package pdftex.def Info: Question3Plot.pdf  used on input line 236.
 (pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
-
-[7 <./Question3Plot.pdf>] (./PS03_Answers_WS.R) [8] (./PS03_Answers_WS.R)
-<Question4Plot.pdf, id=129, 505.89pt x 505.89pt>
+ [7 <./Question3Plot.pdf>]
+(./PS03_Answers_WS.R) [8] (./PS03_Answers_WS.R)
+<Question4Plot.pdf, id=135, 505.89pt x 505.89pt>
 File: Question4Plot.pdf Graphic file (type pdf)
 <use Question4Plot.pdf>
-Package pdftex.def Info: Question4Plot.pdf  used on input line 233.
+Package pdftex.def Info: Question4Plot.pdf  used on input line 285.
 (pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
-
-[9 <./Question4Plot.pdf>] (./PS03_Answers_WS.R) [10] [11] (./PS03 AnswersWS.aux
-)
+ [9 <./Question4Plot.pdf>]
+(./PS03_Answers_WS.R) [10] [11] (./PS03 AnswersWS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"PS03 AnswersWS".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27358 strings out of 467525
- 475830 string characters out of 5418982
- 1144549 words of memory out of 5000000
- 55690 multiletter control sequences out of 15000+600000
- 638467 words of font info for 85 fonts, out of 8000000 for 9000
+ 27366 strings out of 467525
+ 475889 string characters out of 5418982
+ 1131610 words of memory out of 5000000
+ 55693 multiletter control sequences out of 15000+600000
+ 638814 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,104p,3248b,2223s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,104p,3248b,2223s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -968,15 +979,18 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
 ocal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/t
-exlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
-al/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local
-/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "PS03 AnswersWS.pdf" (11 pages, 904051 bytes).
+l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
+ve/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
+xlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texl
+ive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "PS03 AnswersWS.pdf" (11 pages, 930717 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

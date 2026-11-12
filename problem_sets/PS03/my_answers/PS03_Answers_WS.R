@@ -34,7 +34,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 inc.sub <- read.csv("https://raw.githubusercontent.com/ASDS-TCD/StatsI_2026/main/datasets/incumbents_subset.csv")
 #Question 1:
 VoteSharexDiffLog <- lm(inc.sub$voteshare ~ inc.sub$difflog)
-summary(VoteSharexDiffLog)
+stargazer(VoteSharexDiffLog)
 pdf("Question1Plot.pdf")
 plot(inc.sub$difflog, inc.sub$voteshare,
      col = "turquoise",
@@ -47,7 +47,7 @@ residual1 <- VoteSharexDiffLog$residuals
 
 #Question 2
 PresvoteXDiffLogg <- lm(inc.sub$presvote ~ inc.sub$difflog)
-summary(PresvoteXDiffLogg)
+stargazer(PresvoteXDiffLogg)
 pdf("Question2Plot.pdf")
 plot(inc.sub$difflog, inc.sub$presvote,
      col = "pink",
@@ -59,7 +59,7 @@ residuals2 <- PresvoteXDiffLogg$residuals
 
 #Question 3
 PresvoteXVoteShare <- lm(inc.sub$voteshare ~ inc.sub$presvote)
-summary(PresvoteXVoteShare)
+stargazer(PresvoteXVoteShare)
 pdf("Question3Plot.pdf")
 plot(inc.sub$presvote, inc.sub$voteshare,
      col = "lightgreen",
@@ -67,11 +67,11 @@ plot(inc.sub$presvote, inc.sub$voteshare,
      xlab = "Presidential Candidate's Vote Share",
      ylab = "Incumbent's Vote Share")  + abline(PresvoteXVoteShare)
 dev.off()
-
+library(stargazer)
 
 #Question 4:
 Residuals <- lm(residual1 ~ residuals2)
-summary(Residuals)
+stargazer(Residuals)
 sprintf("%f", 2.569e-01)
 sprintf("%f", -1.942e-18)
 pdf("Question4Plot.pdf")
@@ -86,6 +86,6 @@ dev.off()
 View(inc.sub)
 #Question 5:
 MReg<- lm(inc.sub$voteshare ~ inc.sub$difflog + inc.sub$presvote)
-summary(MReg)
+stargazer(MReg)
 
 

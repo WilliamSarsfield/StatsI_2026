@@ -86,28 +86,43 @@
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is \texttt{voteshare} and the explanatory variable is \texttt{difflog}.	\vspace{5cm}
 		\lstinputlisting[language=R, firstline=36, lastline=37]{PS03_Answers_WS.R}  
-			\begin{tabular}{l | c c c c }
-			& Estimate  &  Std. Error & t-value  & P-Value \\
-			\\[-1.8ex] 
-			\hline \\[-1.8ex]
-			Intercept & 0.579031 & 0.002251  & 257.19  &  < 2e-16 *** \\
-			\\
-			Difference In Campaign Spending & 0.041666  & 0.000968  & 43.04 &   < 2e-16 *** \\
-		\end{tabular}
-		
-			\vspace{1cm}
-		Multiple R-squared:  0.3673,
-		Adjusted R-squared:  0.3671  
-		
-		\vspace{1cm}
+			
+			\begin{table}[!htbp] \centering 
+				\caption{} 
+				\label{} 
+				\begin{tabular}{@{\extracolsep{5pt}}lc} 
+					\\[-1.8ex]\hline 
+					\hline \\[-1.8ex] 
+					& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+					\cline{2-2} 
+					\\[-1.8ex] & voteshare \\ 
+					\hline \\[-1.8ex] 
+					difflog & 0.042$^{***}$ \\ 
+					& (0.001) \\ 
+					& \\ 
+					Constant & 0.579$^{***}$ \\ 
+					& (0.002) \\ 
+					& \\ 
+					\hline \\[-1.8ex] 
+					Observations & 3,193 \\ 
+					R$^{2}$ & 0.367 \\ 
+					Adjusted R$^{2}$ & 0.367 \\ 
+					Residual Std. Error & 0.079 (df = 3191) \\ 
+					F Statistic & 1,852.791$^{***}$ (df = 1; 3191) \\ 
+					\hline 
+					\hline \\[-1.8ex] 
+					\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+				\end{tabular} 
+			\end{table} 
+			
 		
 			
 			
-			\textbf{Coefficient:} Every one-unit increase in the logarithmic difference in campaign spending is on average associated with a 4.17 percentage points increase in the vote share of the incumbent. Further since the p-value was significant to the .001 level, the difference in campaign spending is a significant predictor of the vote share the incumbent receives.
+			\textbf{Coefficient:} Every one-unit increase in the logarithmic difference in campaign spending is on average associated with a 4.2 percentage points increase in the vote share of the incumbent. Further since the p-value was significant to the 0.01 level, the difference in campaign spending is a significant predictor of the vote share the incumbent receives.
 		
 		
 		
-			\textbf{Intercept:} Further when there is no difference in the logarithmic difference in campaign spending the incumbents vote share will be on average around 57.90 percentage points.
+			\textbf{Intercept:} Further when there is no difference in the logarithmic difference in campaign spending the incumbents vote share will be on average around 57.9 percentage points.
 			
 			
 			
@@ -119,7 +134,7 @@
 		\item Write the prediction equation. \vspace{1cm}
 		
 		
-		$\widehat {Incumbent's Voteshare}$ = .579031 + .04167 x Difference in Campaign Spending
+		$\widehat {Incumbent's Voteshare}$ = .579 + .042 x Difference in Campaign Spending
 	\end{enumerate}
 	
 \newpage
@@ -129,23 +144,37 @@
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is \texttt{presvote} and the explanatory variable is \texttt{difflog}.	\vspace{1cm}
 		\lstinputlisting[language=R, firstline=49, lastline=50]{PS03_Answers_WS.R}  
-			\begin{tabular}{l | c c c c }
-			& Estimate  &  Std. Error & t-value  & P-Value \\
-			\\[-1.8ex] 
-			\hline \\[-1.8ex]
-			Intercept & 0.507583 &  0.00316 & 160.60  &  <2e-16 *** \\
-			\\
-			Difference In Campaign Spending & 0.023837  & 0.001359  & 17.54 &   <2e-16 *** \\
-			
-		\end{tabular}
-		\vspace{1cm}
-			
-			Multiple R-squared:  0.08795,	Adjusted R-squared:  0.08767 
-			\vspace{1cm}
+		\begin{table}[!htbp] \centering 
+			\caption{} 
+			\label{} 
+			\begin{tabular}{@{\extracolsep{5pt}}lc} 
+				\\[-1.8ex]\hline 
+				\hline \\[-1.8ex] 
+				& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+				\cline{2-2} 
+				\\[-1.8ex] & presvote \\ 
+				\hline \\[-1.8ex] 
+				difflog & 0.024$^{***}$ \\ 
+				& (0.001) \\ 
+				& \\ 
+				Constant & 0.508$^{***}$ \\ 
+				& (0.003) \\ 
+				& \\ 
+				\hline \\[-1.8ex] 
+				Observations & 3,193 \\ 
+				R$^{2}$ & 0.088 \\ 
+				Adjusted R$^{2}$ & 0.088 \\ 
+				Residual Std. Error & 0.110 (df = 3191) \\ 
+				F Statistic & 307.715$^{***}$ (df = 1; 3191) \\ 
+				\hline 
+				\hline \\[-1.8ex] 
+				\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+			\end{tabular} 
+		\end{table} 
 		
-	\textbf{Coefficient:} Every one-unit increase in the logarithmic difference in campaign spending on average is associated with an increase of 2.38 percentage points in the vote share of the presidential candidate of the incumbent's party. Further since the p-value was significant to the .001 level, the difference in campaign spending is a significant predictor of the vote share of the presidential candidate of the incumbent's party.
+	\textbf{Coefficient:} Every one-unit increase in the logarithmic difference in campaign spending on average is associated with an increase of 2.4 percentage points in the vote share of the presidential candidate of the incumbent's party. Further since the p-value was significant to the 0.01 level, the difference in campaign spending is a significant predictor of the vote share of the presidential candidate of the incumbent's party.
 
-	\textbf{Intercept:} Further when there is no difference in the logarithmic difference in campaign spending the vote share of the presidential candidate of the incumbent's party will be on average around 50.76 percentage points. 
+	\textbf{Intercept:} Further when there is no difference in the logarithmic difference in campaign spending the vote share of the presidential candidate of the incumbent's party will be on average around 50.8 percentage points. 
 
 		
 		\item Make a scatterplot of the two variables and add the regression line. 	
@@ -156,7 +185,7 @@
 		\item Write the prediction equation.
 		
 		
-		$\widehat {Presidential Canidate Vote Share}$ = .507583 + .023837 x Difference in Campaign Spending
+		$\widehat {Presidential Canidate Vote Share}$ = .508 + .024 x Difference in Campaign Spending
 	\end{enumerate}
 	
 	\newpage	
@@ -168,25 +197,38 @@
 		\item Run a regression where the outcome variable is \texttt{voteshare} and the explanatory variable is \texttt{presvote}.
 			\vspace{1cm}
 			\lstinputlisting[language=R, firstline=61, lastline=62]{PS03_Answers_WS.R}  
-			\begin{tabular}{l | c c c c }
-				& Estimate  &  Std. Error & t-value  & P-Value \\
-				\\[-1.8ex] 
-				\hline \\[-1.8ex] 
-				Intercept & 0.441330  &  0.007599 & 58.08   &  <2e-16 *** \\
-				\\
-				Presidential Candidate Vote Share & 0.388018  &  0.013493 &  28.76  &    <2e-16 *** \\
-				
-					\end{tabular}
-					\vspace{1cm}
+			\begin{table}[!htbp] \centering 
+				\caption{} 
+				\label{} 
+				\begin{tabular}{@{\extracolsep{5pt}}lc} 
+					\\[-1.8ex]\hline 
+					\hline \\[-1.8ex] 
+					& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+					\cline{2-2} 
+					\\[-1.8ex] & voteshare \\ 
+					\hline \\[-1.8ex] 
+					presvote & 0.388$^{***}$ \\ 
+					& (0.013) \\ 
+					& \\ 
+					Constant & 0.441$^{***}$ \\ 
+					& (0.008) \\ 
+					& \\ 
+					\hline \\[-1.8ex] 
+					Observations & 3,193 \\ 
+					R$^{2}$ & 0.206 \\ 
+					Adjusted R$^{2}$ & 0.206 \\ 
+					Residual Std. Error & 0.088 (df = 3191) \\ 
+					F Statistic & 826.950$^{***}$ (df = 1; 3191) \\ 
+					\hline 
+					\hline \\[-1.8ex] 
+					\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+				\end{tabular} 
+			\end{table} 
 					
 					
-					Multiple R-squared:  0.2058,	Adjusted R-squared:  0.2056 
-					\vspace{1cm}
+					\textbf{Coefficient:} Every one-unit increase in the vote share of the presidential candidate of the incumbent's party is associated with an on average increase of 38.8 percentage points in the vote share of the incumbent's party. Further since the p-value is significant to the 0.01 level, the vote share of the presidential candidate of the incumbent's party is a significant predictor of vote share of the incumbent party. 
 					
-					
-					\textbf{Coefficient:} Every one-unit increase in the vote share of the presidential candidate of the incumbent's party is associated with an on average increase of 38.8 percentage points in the vote share of the incumbent's party. Further since the p-value is significant to the .001 level, the vote share of the presidential candidate of the incumbent's party is a significant predictor of vote share of the incumbent party. 
-					
-					\textbf{Intercept:} When the vote share of the presidential candidate of the incumbent's party is zero the incumbent party's vote share will be on average around 44.13 percentage points. However, despite being significant to the .001 significance level, this value has no meaning in the real world as it is very unlikely verging on improbable that a presidential candidate of the incumbent party would receive 0 percent of the vote share.
+					\textbf{Intercept:} When the vote share of the presidential candidate of the incumbent's party is zero the incumbent party's vote share will be on average around 44.1 percentage points. However, despite being significant to the 0.01 significance level, this value has no meaning in the real world as it is very unlikely verging on improbable that a presidential candidate of the incumbent party would receive 0 percent of the vote share.
 					
 		\item Make a scatterplot of the two variables and add the regression line. 
 			\vspace{1cm}
@@ -195,7 +237,7 @@
 		\item Write the prediction equation.
 		\vspace{1cm}
 		
-			$\widehat {Incumbent's Voteshare}$ = 0.441330 + 0.388018  x Presidential Candidate Vote Share
+			$\widehat {Incumbent's Voteshare}$ = 0.441 + 0.388  x Presidential Candidate Vote Share
 	\end{enumerate}
 	
 
@@ -204,36 +246,46 @@
 \noindent The residuals from part (a) tell us how much of the variation in \texttt{voteshare} is $not$ explained by the difference in spending between incumbent and challenger. The residuals in part (b) tell us how much of the variation in \texttt{presvote} is $not$ explained by the difference in spending between incumbent and challenger in the district.
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is the residuals from Question 1 and the explanatory variable is the residuals from Question 2.	\vspace{1cm}
-			\lstinputlisting[language=R, firstline=73, lastline=76]{PS03_Answers_WS.R}  
-		\begin{tabular}{l | c c c c }
-			& Estimate  &  Std. Error & t-value  & P-Value \\
-			\\[-1.8ex]  
-			\hline \\[-1.8ex]  
-			Intercept & - 1.942e-18 &  1.299e-03 &  0.00    & 1  \\
-			\\
-			Residuals Q2 & 2.569e-01   &  1.176e-02  &  21.84    &     <2e-16 *** \\
-		\end{tabular}
+			\lstinputlisting[language=R, firstline=73, lastline=74]{PS03_Answers_WS.R}  
+	\begin{table}[!htbp] \centering 
+		\caption{} 
+		\label{} 
+		\begin{tabular}{@{\extracolsep{5pt}}lc} 
+			\\[-1.8ex]\hline 
+			\hline \\[-1.8ex] 
+			& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+			\cline{2-2} 
+			\\[-1.8ex] & residual1 \\ 
+			\hline \\[-1.8ex] 
+			residuals2 & 0.257$^{***}$ \\ 
+			& (0.012) \\ 
+			& \\ 
+			Constant & $-$0.000 \\ 
+			& (0.001) \\ 
+			& \\ 
+			\hline \\[-1.8ex] 
+			Observations & 3,193 \\ 
+			R$^{2}$ & 0.130 \\ 
+			Adjusted R$^{2}$ & 0.130 \\ 
+			Residual Std. Error & 0.073 (df = 3191) \\ 
+			F Statistic & 476.975$^{***}$ (df = 1; 3191) \\ 
+			\hline 
+			\hline \\[-1.8ex] 
+			\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+		\end{tabular} 
+	\end{table} 
 			\vspace{1cm}
-		
-		
-			Multiple R-squared:   0.13,	Adjusted R-squared:  0.1298 
-			\vspace{1cm}
-		\begin{verbatim}
-			[1] "0.256900"
-			[1] "-0.000000"
-			
-		\end{verbatim}
 		\vspace{1cm}
 		
-	\textbf{Coefficient:} By regressing the residuals, every one-unit increase in the residual from Question 2 (The variation in the vote share of the presidential candidate of the incumbent's party not explained by difference in campaign spending) is associated with a .2569 increase in the residual from Question 1 (The variation in the vote share of the incumbent's party not explained by difference in campaign spending). Further since the p-value is significant to the .001 level, residual of Question 2 is a significant predictor of the residual from Question 1. 
+	\textbf{Coefficient:} By regressing the residuals, every one-unit increase in the residual from Question 2 (The variation in the vote share of the presidential candidate of the incumbent's party not explained by difference in campaign spending) is associated with a .257 increase in the residual from Question 1 (The variation in the vote share of the incumbent's party not explained by difference in campaign spending). Further since the p-value is significant to the 0.01 level, residual of Question 2 is a significant predictor of the residual from Question 1. 
 	
-		\textbf{Intercept:} Further, when the residual from Question 2 is zero on average the residual from Question 1 would be effectively zero as well, as -1.942e-18 equals roughly 0.
+		\textbf{Intercept:} Further, when the residual from Question 2 is zero on average the residual from Question 1 would be zero.
 		\item Make a scatterplot of the two residuals and add the regression line. 	\vspace{1cm}
 			\lstinputlisting[language=R, firstline=77, lastline=83]{PS03_Answers_WS.R}  
 				\includegraphics[width=.75\textwidth]{Question4Plot.pdf}
 		\item Write the prediction equation.
 		
-			$\widehat {Residual From Q1}$ =  0 + .2569 x Residual From Q2
+			$\widehat {Residual From Q1}$ =  0 + .257 x Residual From Q2
 	\end{enumerate}
 	
 	\newpage	
@@ -245,43 +297,61 @@
 		\vspace{1cm}
 		/ 
 			\lstinputlisting[language=R, firstline=88, lastline=89]{PS03_Answers_WS.R}  
-		\begin{tabular}{l | c c c c } 
-			& Estimate  &  Std. Error & t-value  & P-Value \\
-			\\[-1.8ex]    
-			\hline \\[-1.8ex]  
-			Intercept & 0.4486442  &  0.0063297 &  70.88    &  <2e-16 ***  \\
-			\\ 
-			Difference in Campaign Spending & 0.0355431   &  0.0009455   & 37.59   &     <2e-16 *** \\
-			\\
-			Presidential Candidate Vote Share & 0.2568770 & 0.0117637  & 21.84 &     <2e-16 *** \\
-		\end{tabular}
-		\vspace*{1cm}
-	
-		Multiple R-squared:  0.4496,	Adjusted R-squared:  0.4493 
-		\vspace{1cm}
-			
-			\textbf{Coefficient:} \texttt{DiffLog } Every one-unit increase in the logarithmic difference in campaign spending is associated with an increase of 3.55 percentage points in the vote share of the incumbent party while holding the variation in the \texttt{presvote} variable constant. 
-			
-			\textbf{Coefficient:} \texttt{Presvote} Every one-unit increase in the vote share of the presidential candidate of the incumbent's party is associated with an increase of 25.68 percentage points in the vote share of the incumbent's party while holding the variation in the \texttt{difflog} variable constant. 
 			
 			
-		Further since the p-value for both predictors is significant to the .001 level, therefore difference in campaign spending is a significant predictor of vote share of incumbent as well as the vote share of the presidential candidate of the incumbent's party is a significant predictor of vote share of the incumbent. 
+	\begin{table}[!htbp] \centering 
+		\caption{} 
+		\label{} 
+		\begin{tabular}{@{\extracolsep{5pt}}lc} 
+			\\[-1.8ex]\hline 
+			\hline \\[-1.8ex] 
+			& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+			\cline{2-2} 
+			\\[-1.8ex] & voteshare \\ 
+			\hline \\[-1.8ex] 
+			difflog & 0.036$^{***}$ \\ 
+			& (0.001) \\ 
+			& \\ 
+			presvote & 0.257$^{***}$ \\ 
+			& (0.012) \\ 
+			& \\ 
+			Constant & 0.449$^{***}$ \\ 
+			& (0.006) \\ 
+			& \\ 
+			\hline \\[-1.8ex] 
+			Observations & 3,193 \\ 
+			R$^{2}$ & 0.450 \\ 
+			Adjusted R$^{2}$ & 0.449 \\ 
+			Residual Std. Error & 0.073 (df = 3190) \\ 
+			F Statistic & 1,302.947$^{***}$ (df = 2; 3190) \\ 
+			\hline 
+			\hline \\[-1.8ex] 
+			\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+		\end{tabular} 
+	\end{table} 
+			
+			\textbf{Coefficient:} \texttt{DiffLog } Every one-unit increase in the logarithmic difference in campaign spending is associated with an increase of 3.6 percentage points in the vote share of the incumbent party while holding the variation in the \texttt{presvote} variable constant. 
+			
+			\textbf{Coefficient:} \texttt{Presvote} Every one-unit increase in the vote share of the presidential candidate of the incumbent's party is associated with an increase of 25.7 percentage points (.257 units) units  in the vote share of the incumbent's party while holding the variation in the \texttt{difflog} variable constant. 
+			
+			
+		Further since the p-value for both predictors is significant to the 0.01 level, therefore difference in campaign spending is a significant predictor of vote share of incumbent as well as the vote share of the presidential candidate of the incumbent's party is a significant predictor of vote share of the incumbent. 
 		
 			
-			\textbf{Intercept:} Further when both \texttt{difflog} = 0 and \texttt{presvote} = 0  the incumbent party's vote share will be on average around 44.86 percentage points. However as mentioned previously it is very unlikely that a presidential candidate of the incumbent's party will receive zero percent of the vote share therefore the y-intercept has little meaningful interpretation. 
+			\textbf{Intercept:} Further when both \texttt{difflog} = 0 and \texttt{presvote} = 0  the incumbent party's vote share will be on average around 44.9 percentage points. However as mentioned previously it is very unlikely that a presidential candidate of the incumbent's party will receive zero percent of the vote share therefore the y-intercept has little meaningful interpretation. 
 			
-			Looking at both the results in Question 3 and Question 5  the difference in campaign spending between the incumbent and challengers is positively correlated with presidential candidate vote share and incumbent vote share. As in Question 3 for every increase of one unit in vote share of the presidential candidate  of the incumbent's party on average vote share of the incumbent party increases by .3880 and it decreases to .2568 for \textbf{Question 5} therefore signalling that the \texttt{difflog} variable is positively correlated with voteshare and presvote.
+			Looking at both the results in Question 3 and Question 5  the difference in campaign spending between the incumbent and challengers is positively correlated with presidential candidate vote share and incumbent vote share. As in Question 3 for every increase of one unit in vote share of the presidential candidate  of the incumbent's party on average vote share of the incumbent party increases by .388 and it decreases to .257 for \textbf{Question 5} therefore signalling that the \texttt{difflog} variable is positively correlated with voteshare and presvote.
 			
 
 		
 		\item Write the prediction equation.	\vspace{1cm}\\
-		$\widehat {Incumbent's Voteshare}$ = 0.4486442 + 0.035543 x Difference in Campaign Spending  + 0.2568770 x Presidential Candidate Vote Share
+		$\widehat {Incumbent's Voteshare}$ = 0.449 + 0.036 x Difference in Campaign Spending  + 0.257 x Presidential Candidate Vote Share
 		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case?
 		
 		
-		The Beta of .2569 in the residual plot is identical to the Beta of presvote and voteshare in Question 5 while holding the variation in \texttt{difflog} constant. Additionally the Standard Error is also the same. The reason that this is identical is because the residuals from Question 1  told us how much the variation in voteshare was not explained by the difference in spending between incumbent and challenger in a district. Whereas the residual in Question 2 demonstrates the variation in presvote that is not explained by the difference in spending by incumbent and challenger in the district. 
+		The Beta of .257 in the residual plot is identical to the Beta of presvote and voteshare in Question 5 while holding the variation in \texttt{difflog} constant. Additionally the Standard Error is also the same. The reason that this is identical is because the residuals from Question 1  told us how much the variation in voteshare was not explained by the difference in spending between incumbent and challenger in a district. Whereas the residual in Question 2 demonstrates the variation in presvote that is not explained by the difference in spending by incumbent and challenger in the district. 
 		
-		Thus, the residuals presented have removed the effect of \texttt{difflog}, or the difference in campaign spending from both the \texttt{voteshare} and \texttt{presvote} variables. Therefore, by performing a bivariate regression of the residuals in Question 4 and getting a Beta of .2569, this regression therefore holds for the variation of \texttt{difflog} constant. The same action is done in the multivariate regression in Question 5. Therefore both regressions effectively do the same action, therefore the variation for \texttt{difflog} is accounted for in both regressions and the coefficient for the Beta and the SE are identical in both Question 4 and 5.
+		Thus, the residuals presented have removed the effect of \texttt{difflog}, or the difference in campaign spending from both the \texttt{voteshare} and \texttt{presvote} variables. Therefore, by performing a bivariate regression of the residuals in Question 4 and getting a Beta of .257 this regression therefore holds for the variation of \texttt{difflog} constant. The same action is done in the multivariate regression in Question 5. Therefore both regressions effectively do the same action, therefore the variation for \texttt{difflog} is accounted for in both regressions and the coefficient for the Beta and the SE are identical in both Question 4 and 5.
 	
 		
 		
