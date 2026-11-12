@@ -95,6 +95,10 @@
 			Difference In Campaign Spending & 0.041666  & 0.000968  & 43.04 &   < 2e-16 *** \\
 		\end{tabular}
 		
+			\vspace{1cm}
+		Multiple R-squared:  0.3673,
+		Adjusted R-squared:  0.3671  
+		
 		\vspace{1cm}
 		
 			
@@ -135,7 +139,9 @@
 			
 		\end{tabular}
 		\vspace{1cm}
-		
+			
+			Multiple R-squared:  0.08795,	Adjusted R-squared:  0.08767 
+			\vspace{1cm}
 		
 	\textbf{Coefficient:} Every one-unit increase in the logarithmic difference in campaign spending on average is associated with an increase of 2.38 percentage points in the vote share of the presidential candidate of the incumbent's party. Further since the p-value was significant to the .001 level, the difference in campaign spending is a significant predictor of the vote share of the presidential candidate of the incumbent's party.
 
@@ -169,8 +175,14 @@
 				Intercept & 0.441330  &  0.007599 & 58.08   &  <2e-16 *** \\
 				\\
 				Presidential Candidate Vote Share & 0.388018  &  0.013493 &  28.76  &    <2e-16 *** \\
+				
 					\end{tabular}
 					\vspace{1cm}
+					
+					
+					Multiple R-squared:  0.2058,	Adjusted R-squared:  0.2056 
+					\vspace{1cm}
+					
 					
 					\textbf{Coefficient:} Every one-unit increase in the vote share of the presidential candidate of the incumbent's party is associated with an on average increase of 38.8 percentage points in the vote share of the incumbent's party. Further since the p-value is significant to the .001 level, the vote share of the presidential candidate of the incumbent's party is a significant predictor of vote share of the incumbent party. 
 					
@@ -201,6 +213,10 @@
 			\\
 			Residuals Q2 & 2.569e-01   &  1.176e-02  &  21.84    &     <2e-16 *** \\
 		\end{tabular}
+			\vspace{1cm}
+		
+		
+			Multiple R-squared:   0.13,	Adjusted R-squared:  0.1298 
 			\vspace{1cm}
 		\begin{verbatim}
 			[1] "0.256900"
@@ -240,8 +256,9 @@
 			Presidential Candidate Vote Share & 0.2568770 & 0.0117637  & 21.84 &     <2e-16 *** \\
 		\end{tabular}
 		\vspace*{1cm}
-		
-		
+	
+		Multiple R-squared:  0.4496,	Adjusted R-squared:  0.4493 
+		\vspace{1cm}
 			
 			\textbf{Coefficient:} \texttt{DiffLog } Every one-unit increase in the logarithmic difference in campaign spending is associated with an increase of 3.55 percentage points in the vote share of the incumbent party while holding the variation in the \texttt{presvote} variable constant. 
 			
@@ -255,6 +272,7 @@
 			
 			Looking at both the results in Question 3 and Question 5  the difference in campaign spending between the incumbent and challengers is positively correlated with presidential candidate vote share and incumbent vote share. As in Question 3 for every increase of one unit in vote share of the presidential candidate  of the incumbent's party on average vote share of the incumbent party increases by .3880 and it decreases to .2568 for \textbf{Question 5} therefore signalling that the \texttt{difflog} variable is positively correlated with voteshare and presvote.
 			
+
 		
 		\item Write the prediction equation.	\vspace{1cm}\\
 		$\widehat {Incumbent's Voteshare}$ = 0.4486442 + 0.035543 x Difference in Campaign Spending  + 0.2568770 x Presidential Candidate Vote Share
